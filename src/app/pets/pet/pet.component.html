@@ -1,0 +1,16 @@
+<td>
+  <p>{{ subPet.name }}</p>
+</td>
+<td>
+  <p>{{ subPet.age }}</p>
+</td>
+<td>
+  <p>{{ subPet.getFace() }}</p>
+</td>
+<td>
+  <a [routerLink]="['/pets/modify']" [queryParams]="{ petIndex: subIndex }">
+    <button class="btn btn-info">
+      <i class="bi bi-pencil-fill"></i>
+    </button>
+  </a>
+</td>

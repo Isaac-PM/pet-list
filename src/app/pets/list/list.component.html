@@ -1,0 +1,39 @@
+<div class="fluid-container bg-body-tertiary">
+  <nav class="navbar ms-3">
+    <a routerLink="/pets/add">
+      <button class="btn btn-primary">
+        <!-- 
+          NOTE
+          pets/add = a relative link to this component's route, if used it will be appended to the current route.
+  
+          /pets/add = an absolute link, if used it will replace the current route.
+        -->
+        <i class="bi bi-plus-circle-fill"></i> Add pet
+      </button>
+    </a>
+  </nav>
+</div>
+<br>
+<div class="container align-items-center">
+  <h2>Our pets</h2>
+  <table class="table table-striped align-middle">
+    <thead>
+      <th>
+        <h3>Name</h3>
+      </th>
+      <th>
+        <h3>Age</h3>
+      </th>
+      <th>
+        <h3>Type</h3>
+      </th>
+      <th>
+        <h3>Modify</h3>
+      </th>
+    </thead>
+    <tbody>
+      <tr app-pet *ngFor="let supPet of pets; let supIndex = index" [subPet]="supPet" [subIndex]="supIndex"></tr>
+    </tbody>
+  </table>
+</div>
+<br>

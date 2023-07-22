@@ -1,0 +1,52 @@
+<div class="fluid-container bg-body-tertiary">
+  <nav class="navbar ms-3">
+    <a routerLink="/pets/list">
+      <button class="btn btn-warning">
+        <i class="bi bi-box-arrow-left"></i> Back
+      </button>
+    </a>
+  </nav>
+</div>
+
+<br>
+<div class="container">
+  <h2> Add or modify a pet</h2>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" name="petName" id="petName" placeholder="Name" [(ngModel)]="petName">
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" name="petAge" id="petAge" placeholder="Age" [(ngModel)]="petAge">
+      </div>
+      <div class="col">
+        <select class="form-select" name="petType" id="petType" [(ngModel)]="petType">
+          <option value="Dog">Dog 🐶</option>
+          <option value="Cat">Cat 🐱</option>
+          <option value="Bird">Bird 🐦</option>
+          <option value="Fish">Fish 🐟</option>
+          <option value="Reptile">Reptile 🦎</option>
+          <option value="Other">Other 🐾</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <div class="row row-cols-auto">
+      <div class="col">
+        <button class="btn btn-primary" (click)="addOrModifyPet()">
+          <span *ngIf="petIndex === undefined; else modifyButton">
+            <i class="bi bi-plus-circle-fill"></i> Add pet!
+          </span>
+          <ng-template #modifyButton>
+            <i class="bi bi-pencil-fill"></i> Modify pet!
+          </ng-template>
+        </button>
+      </div>
+      <div class="col">
+        <button *ngIf="petIndex !== undefined" class="btn btn-danger" (click)="deletePet()">
+          <i class="bi bi-trash-fill"></i> Delete pet!
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
