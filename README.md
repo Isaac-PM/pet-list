@@ -25,7 +25,7 @@ Please note that the Firebase database used in the project is no longer availabl
 
 ![](https://i.imgur.com/nYDksdZ.png)
 
-## Edit pet
+## Edit or delete pet
 
 ![](https://i.imgur.com/2bm8r1Q.png)
 
