@@ -1,27 +1,34 @@
-# PetList
+# Pet List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+This project is a basic CRUD application for managing a list of pets. Each pet has the following attributes:
 
-## Development server
+- Name
+- Age
+- Type
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The technologies used for the development of this project are:
 
-## Code scaffolding
+- Angular 16
+- NodeJS 18.16.1
+- Bootstrap 5
+- Firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Please note that the Firebase database used in the project is no longer available, so you will need to provide your own link to the Firebase Realtime Database.
 
-## Build
+# Gallery
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Main list
 
-## Running unit tests
+![](https://i.imgur.com/MA08b2s.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Add pet
 
-## Running end-to-end tests
+![](https://i.imgur.com/nYDksdZ.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Edit pet
 
-## Further help
+![](https://i.imgur.com/2bm8r1Q.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Database
+
+![](https://i.imgur.com/QahkoIN.png)
